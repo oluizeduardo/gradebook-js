@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim JS</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="base-container">
+            <section class="container-register">
+                <h2>Inserir Pontos</h2>
+                <div>
+                    <table class="table-header">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Aluno</td>
+                                <td colspan="3">Pontuação</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>Javascript</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" id="info-name"/>
+                                </td>
+
+                                <td>
+                                    <input type="number" max="100" min="0" id="grade-html"/>
+                                </td>
+
+                                <td>
+                                    <input type="number" max="100" min="0" id="grade-css"/>
+                                </td>
+
+                                <td>
+                                    <input type="number" max="100" min="0"  id="grade-js"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <button id="register">Adicionar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                    <div style="margin: 0; position: absolute; color: red; margin-top: 0;">
+                        <span class="invisible" id="message-error">* Todos os campos devem ser preenchidos com valores válidos.</span>
+                        <span class="invisible" id="message-negative-grade">* Os campos de notas não podem ser negativos.</span>
+                    </div>
+                </div>    
+            </section>
+            <section class="container-grades">
+                <h2>Notas</h2>
+                <table id="table-grades">
+                    <tbody>
+                        <tr>
+                            <td class="table-grades-header">Aluno</td>
+                            <td class="table-grades-header">Total</td>
+                            <td class="table-grades-header">Média</td>
+                            <td class="table-grades-header">Resultado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="save" disabled>Salvar no Browser</button>  
+                <button id="cleanRecords" disabled>Excluir Registros</button>              
+            </section>
+        </div>
+    </main>
+    <script src="MainForm.js"></script>
+    <script src="LocalStorage.js"></script>
+    <script src="DeleteRecords.js"></script>
+</body>
+
+</html>

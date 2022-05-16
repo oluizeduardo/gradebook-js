@@ -1,0 +1,84 @@
+html {
+    background: radial-gradient(farthest-corner at right top,#21a078, #062d2a);
+    height: 100%;
+    font-family: 'Roboto', cursive;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.base-container{
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(220, 247, 238);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-register, .container-grades{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+button{
+    padding: 5px 40px 5px 40px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid rgb(178, 168, 168);
+}
+
+.table-header{
+    background-color: rgb(121, 73, 73);
+    color: rgb(233, 243, 243);
+}
+
+#table-grades{
+    margin-bottom: 30px;
+}
+
+.table-grades-header{
+    background-color: rgb(121, 73, 73);
+    color: rgb(233, 243, 243);
+}
+
+.table-row{
+    background-color: white
+}
+
+td, th {
+	margin: 0;
+	border: 1px solid rgb(178, 168, 168);
+	text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.saved-row{
+    background-color: hsl(180, 38%, 89%);
+}
+
+input{
+    width: 220px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.approved{
+    color: rgb(11, 188, 11);
+}
+
+.fail{
+    color: red;
+}
+
+.invisible{
+	display: none;
+}
