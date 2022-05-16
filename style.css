@@ -1,8 +1,8 @@
 html {
     background: radial-gradient(farthest-corner at right top,#21a078, #062d2a);
     height: 100%;
-    font-family: 'Roboto', cursive;
-    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -55,6 +55,7 @@ td, th {
 	text-align: center;
     padding: 3px;
     font-weight: bold;
+    height: 30px;
 }
 
 .saved-row{
@@ -63,6 +64,7 @@ td, th {
 
 input{
     width: 220px;
+    height: 25px;
     text-align: center;
 }
 
